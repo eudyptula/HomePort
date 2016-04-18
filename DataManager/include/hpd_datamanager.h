@@ -49,17 +49,47 @@ typedef void (*servicePutFunction) (Service* service, Request req, const char *p
 // HTTP status codes according to
 // http://www.w3.org/Protocols/rfc2616/rfc2616.html
 #define HTTP_STATUS_CODE_MAP(XX) \
-   XX(200,200 OK) \
-   XX(201,201 Created) \
-   XX(303,303 See Other) \
-   XX(400,400 Bad Request) \
-   XX(404,404 Not Found) \
-   XX(405,405 Method Not Allowed) \
-   XX(406,406 Not Acceptable) \
-   XX(408,408 Request Timeout) \
-   XX(415,415 Unsupported Media Type) \
-   XX(500,500 Internal Server Error) \
-   XX(504,504 Gateway Timeout)
+    XX(100, Continue) \
+    XX(101, Switching Protocols) \
+    XX(200, OK) \
+    XX(201, Created) \
+    XX(202, Accepted) \
+    XX(203, Non-Authoritative Information) \
+    XX(204, No Content) \
+    XX(205, Reset Content) \
+    XX(206, Partial Content) \
+    XX(300, Multiple Choices) \
+    XX(301, Moved Permanently) \
+    XX(302, Found) \
+    XX(303, See Other) \
+    XX(304, Not Modified) \
+    XX(305, Use Proxy) \
+    XX(306, (Unused)) \
+    XX(307, Temporary Redirect) \
+    XX(400, Bad Request) \
+    XX(401, Unauthorized) \
+    XX(402, Payment Required) \
+    XX(403, Forbidden) \
+    XX(404, Not Found) \
+    XX(405, Method Not Allowed) \
+    XX(406, Not Acceptable) \
+    XX(407, Proxy Authentication Required) \
+    XX(408, Request Timeout) \
+    XX(409, Conflict) \
+    XX(410, Gone) \
+    XX(411, Length Required) \
+    XX(412, Precondition Failed) \
+    XX(413, Request Entity Too Large) \
+    XX(414, Request-URI Too Long) \
+    XX(415, Unsupported Media Type) \
+    XX(416, Requested Range Not Satisfiable) \
+    XX(417, Expectation Failed) \
+    XX(500, Internal Server Error) \
+    XX(501, Not Implemented) \
+    XX(502, Bad Gateway) \
+    XX(503, Service Unavailable) \
+    XX(504, Gateway Timeout) \
+    XX(505, HTTP Version Not Supported)
 
 /// HTTP status codes
 /**
